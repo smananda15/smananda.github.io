@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aditya & ananda Wedding</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+  </head>
+
+  <link rel="stylesheet" href="style.css">
+
+  <body>
+      
+     <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-black">
+
+     <main>
+
+         <h4>Kepada Bapak/Ibu/Saudara/i, </h4>
+         <h1> Aditya Rizal & Ananda Sri </h1>
+         <p>akan melaksanakan resepsi pernikahan dalam:</p>
+
+<div class=waktu>
+	<div class=waktukedua>
+		<h1 id="day" class="digit">00</h1>
+	<p class="digit_name">HARI</	p>
+	</div>
+	<div class=waktukedua>
+		<h1 id="hour" class="digit">00</h1>
+	<p class="digit_name">JAM</	p>
+	</div>
+	<div class=waktukedua>
+		<h1 id="min" class="digit">00</h1>
+	<p class="digit_name">MENIT</	p>
+	</div>
+</div>
+
+<style>
+body {
+            overflow: hidden;
+}            
+</style>
+
+
+    <script>
+        function enableScroll() {
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+         
+<a href="#home" class="btn btn-lg" onclick="enableScroll()">lihat undangan</a>
+
+
+
+         </section>
+
+
+<!-- Navbar Bottom -->
+    <nav class="navbar bg-dark navbar-expand sticky-top rounded-bottom-4 p-0 filter-blur" id="navbar-menu">
+        <ul class="navbar-nav nav-justified w-100 align-items-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="d-block" style="font-size: 2rem;color:white;">Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#mempelai">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span class="d-block" style="font-size: 2rem; color: white;">Mempelai</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#tanggal">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span class="d-block" style="font-size: 2rem;color:white;">Tanggal</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#galeri">
+                    <i class="fa-solid fa-images"></i>
+                    <span class="d-block" style="font-size: 2rem;color:white;">Galeri</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#ucapan">
+                    <i class="fa-solid fa-comments"></i>
+                    <span class="d-block" style="font-size: 2rem;color:white;">Ucapan</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+  <!-- home -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+
+      <section id="home" class="home">
+<div class="container">
+<div class="row justify-content-center">
+<div class="text-center">
+
+<div class="col-md-8 text-center">
+
+
+<!-- javascript -->
+
+    <script>
+var target_mili_sec = new Date("oct 17, 2027 14:30:00").getTime();
+function timer(){
+var now_mili_sec = new Date().getTime();
+var remaining_sec = Math.floor((target_mili_sec - now_mili_sec) / 1000);
+
+var day = Math.floor(remaining_sec / (3600 * 24));
+
+var hour = Math.floor(remaining_sec % (3600 * 24)/3600);
+
+var min = Math.floor(remaining_sec % (3600 * 24) / 60);
+
+document.querySelector("#day").innerHTML = day;
+
+document.querySelector("#hour").innerHTML = hour;
+
+document.querySelector("#min").innerHTML = min;
+
+}
+
+setInterval(timer,1000);//1000 it means 1 sec
+
+</script>
+
+<!-- audio -->
+
+  <audio id="background-audio" autoplay loop>
+        <source src="audio.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+
+    <button class="audio-control" id="audio-control">
+        <img src="play.png" id="audio-icon" alt="Control Audio">
+    </button>
+
+       <script>
+        const audio = document.getElementById('background-audio');
+        const audioControl = document.getElementById('audio-control');
+        const audioIcon = document.getElementById('audio-icon');
+
+        // Event listener to toggle play/pause
+        audioControl.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                audioIcon.src = 'pause.png';
+            } else {
+                audio.pause();
+                audioIcon.src = 'play.png';
+            }
+        });
+
+        // Set the initial icon based on the autoplay state
+
+        if (audio.paused) {
+            audioIcon.src = 'play.png';
+        } else {
+            audioIcon.src = 'pause.png';
+        }
+    </script>
+
+  </body>
+</html>
